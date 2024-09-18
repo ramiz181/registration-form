@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Bank Account form</title>
+</head>
+
+<body>
+    <div class="form">
+        <h1>New Bank Account</h1>
+        <form class="flexbox">
+            <input type="text" placeholder="Full name" id="name1">
+            <input type="email" placeholder="Email" id="email1">
+            <input type="tel" placeholder="Phone number" id="telphone">
+            <input type="text" placeholder="Nationality" id="nationality">
+            <input type="text" placeholder="Permanent Address" id="address">
+            <input type="text" placeholder="Mailing Address " id="mail-address">
+            <input type="text" placeholder="CNIC" id="cnic">
+            <select name="rad" id="employment-status">
+                <option value="Employment Status" name="rad">Employment Status</option>
+                <option value="Employed" name="rad">Employed</option>
+                <option value="Self-Employed" name="rad">Self-Employed</option>
+                <option value="Unemployed" name="rad">Unemployed</option>
+                <option value="Student" name="rad">Student</option>
+                <option value="Retired" name="rad">Retired</option>
+            </select>
+            <input type="submit" onclick="show(event)">
+            <input type="button" value="delete me" onclick="deleteStart()">
+        </form>
+        <!-- <button onclick="deleteStart()">Delete end</button> -->
+
+
+    </div>
+
+    <div class="form overflow">
+        <h1 id="output">Form details: </h1>
+        <span>
+            <h3>Name: <p id="namehere"></p>
+            </h3>
+        </span>
+        <span>
+            <h3>Email: <p id="emailhere"></p>
+            </h3>
+        </span>
+        <span>
+            <h3>Phone: <p id="phonehere"></p>
+            </h3>
+        </span>
+        <span>
+            <h3>Nationality: <p id="nationalityhere"></p>
+            </h3>
+        </span>
+        <span>
+            <h3>Permanent address: <p id="address1here"></p>
+            </h3>
+        </span>
+        <span>
+            <h3>Mailing address: <p id="address2here"></p>
+            </h3>
+        </span>
+        <span>
+            <h3>CNIC: <p id="cnichere"></p>
+            </h3>
+        </span>
+        <span>
+            <h3>Employment status: <p id="statushere"></p>
+            </h3>
+        </span>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
